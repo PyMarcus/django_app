@@ -1,6 +1,10 @@
 # django_app
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
 
+![image](https://user-images.githubusercontent.com/88283829/218598793-ea1c51ca-6d41-4ced-8e93-b21ac85640fa.png)
+
+
+
 ### Dependencies:
      Python version: 3.10
 
@@ -16,3 +20,6 @@ Django is a high-level Python web framework that encourages rapid development an
 
     django-admin startproject name .
 
+### MTV
+
+![image](https://user-images.githubusercontent.com/88283829/218598747-cd24dc32-9057-4871-8c7b-7560d8d1a877.png)
