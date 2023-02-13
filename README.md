@@ -20,6 +20,11 @@ Django is a high-level Python web framework that encourages rapid development an
 
     django-admin startproject name .
 
+### Create an app
+
+    django-admin startapp name
+
+
 ### MTV
 
 ![image](https://user-images.githubusercontent.com/88283829/218598747-cd24dc32-9057-4871-8c7b-7560d8d1a877.png)
