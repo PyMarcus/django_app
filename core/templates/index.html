@@ -8,6 +8,24 @@
     <h1>Index page</h1>
 
     {{ welcome }}
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Store</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+                <tr>
+                    <td><a href="{% url 'product' product.id %}">{{ product.name }}</a></td>
+                    <td>{{ product.price }}</td>
+                    <td>{{ product.store }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 </body>
 </html>

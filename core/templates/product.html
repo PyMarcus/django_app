@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+</head>
+<body>
+    <h1>Product {{ product.name }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Price</th>
+                <th>Store</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>{{ product.price }}</td>
+                <td>{{ product.store }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{% url 'index' %}">Back</a>
+</body>
+</html>
