@@ -1,6 +1,9 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
     <meta charset="UTF-8">
     <title>Index</title>
 </head>
@@ -8,6 +11,9 @@
     <h1>Index page</h1>
 
     {{ welcome }}
+
+    <img src="{% static 'images/panda.jpg' %}" name="panda">
+
     <table>
         <thead>
             <tr>
@@ -27,5 +33,7 @@
         </tbody>
     </table>
 
+    <button onclick="change_theme()">Change theme</button>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

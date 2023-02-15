@@ -46,6 +46,10 @@ Django is a high-level Python web framework that encourages rapid development an
     python manage.py createsuperuser
 
 
+### RUN static file to production:
+
+    python manage.py collectstatic
+
 Admin page:
 
 ![img.png](img.png)

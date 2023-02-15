@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -8,7 +9,7 @@ SECRET_KEY = 'django-insecure-a714qghcke3uke%==nx-ay13yyu2z&a$qh&$gq1(e#czc$!nn0
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']  # to test *
 
@@ -87,7 +88,8 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = 'static/'
+STATIC_URL = 'static/'  # desenv
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # production
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
